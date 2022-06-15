@@ -22,7 +22,7 @@ Feature: Arayüz test senaryosu
     And delay(2000)
     And click("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']")
     And clear("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']")
-    And input("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']",'MentorLabs Challange')
+    And input("//input[@class='f0GjZQZc4c_bKpqdyKbq JaGLdeBa2UaUMBT44vqI']",'MentorLabs Challenge')
     And delay(3000)
     And click("//div[@class='ButtonInner-sc-14ud5tc-0 iebPZv encore-inverted-light-set']")
     And delay(3000)
