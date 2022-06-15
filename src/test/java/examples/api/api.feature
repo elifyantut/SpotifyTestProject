@@ -3,7 +3,7 @@ Feature: Api Test Senaryosu
   Background:
     * def urlHome = 'https://open.spotify.com/'
     * def user_id = '316s7gmalqadz6tzvbgbmv342grm'
-    * def token = 'Bearer BQAOvwaEI6ATRRq6JqeAzY7j2GsTeYjXoy1ixpkxbXfVCQWoEo2Q8kEPicZwMyA2X3fMO5RLgjkpWbT_5xdY2M-FreQOKhZwPBFKXBCTRj9xl32oQqikEPn--qkJQi1M9vVy9EhiGRjXiTyGHTGkZcfw5aS5kK69mTxjXhrEWPGTMFUUbSgo1D-7Wl_cGOgRUC8wHMDXE0L9XJDiJ4TVkMTy1GtT3I9BzOiVanRgoClgiYm8ETNxkB4WV-cMUX2i4vBX6ZFixss37tw'
+    * def token = 'Bearer BQCxWke9qgbcx7lhvhgSibR9WJwO7pHXl9DjO15G8VqcUABJF5_L7hrfCgPHi7lAvYSOhIEg1Qqh3pV6sKFlWIFWdad7V5U-a4Vt7srX8mrXx-Kv4G94gslyaTN3j1Ou9PodlfrYvVAerGnk1GJy-uLjZYfvdrRONVbC8XkYlymCKVEIJZgu5DUQNWGj9up8yK_W1YveXNpZsLK14y9Z9_ciW7nda55I3UcWYnrER8LFUrvG6yOL5bqsECVD00aphqcqZs0I5sGvE58'
     * def playlist =
     """
  {
@@ -23,6 +23,7 @@ Feature: Api Test Senaryosu
   }
   """
 
+  @ignore
   @Get
   Scenario: Get playlist user
     Given url 'https://api.spotify.com/v1'
@@ -30,7 +31,9 @@ Feature: Api Test Senaryosu
     And header Authorization = token
     When method GET
 
-   @Create
+
+  @ignore
+  @Create
   Scenario: Create playlist
     Given url 'https://api.spotify.com/v1'
     And path '/users/'+user_id+'/playlists'
@@ -39,7 +42,8 @@ Feature: Api Test Senaryosu
     When method POST
     And def playlistid = response.id
 
-   @Search
+
+  @Search
   Scenario: Search song
    Given url 'https://api.spotify.com/v1'
    And path '/search'
@@ -48,7 +52,7 @@ Feature: Api Test Senaryosu
    And param type = 'track'
    When method GET
 
-   @Item
+  @Item
   Scenario: Add items to playlist
     * def callresponse = call read('api.feature@Create')
     * def playlist_id = callresponse.playlistid
