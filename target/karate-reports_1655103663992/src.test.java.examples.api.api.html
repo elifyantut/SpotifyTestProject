@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.examples.api.api</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-06-13 09:28:01 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>api</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/examples/api/api.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">api</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">api</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1505</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://open.spotify.com/collection/playlists&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">09:27:59.522 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;pet&#39; , 250</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1482</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">09:28:00.212 request:
+1 &gt; GET https://open.spotify.com/collection/playlists/pet/250
+1 &gt; Host: open.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_281)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:28:01.061 response time in milliseconds: 825
+1 &lt; 404
+1 &lt; date: Mon, 13 Jun 2022 06:28:02 GMT
+1 &lt; content-type: text/html; charset=utf-8
+1 &lt; vary: Accept-Encoding
+1 &lt; sp-trace-id: 6d76ca64038c9ffc
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Set-Cookie: sp_landing=https%3A%2F%2Fopen.spotify.com%2Fcollection%2Fplaylists%2Fpet%2F250%3Fsp_cid%3D92427ea24fd48bcb294f94b6c69ba457%26device%3Ddesktop; Max-Age=1655188082000; Expires=Sat, 08 Apr 54473 17:41:21 GMT; Domain=spotify.com; Secure
+1 &lt; Set-Cookie: sp_t=92427ea24fd48bcb294f94b6c69ba457; Max-Age=1686637682000; Expires=Sat, 13 Nov 55469 17:41:21 GMT; Domain=spotify.com; Secure
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;title&gt;Page not found&lt;/title&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=9&quot;&gt;
+
+  &lt;meta name=&quot;google&quot; value=&quot;notranslate&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+  &lt;meta property=&quot;og:site_name&quot; content=&quot;Spotify&quot;&gt;
+  &lt;meta property=&quot;fb:app_id&quot; content=&quot;174829003346&quot;&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;32x32&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon32.8e66b099.png&quot; /&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;16x16&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon16.c498a969.png&quot; /&gt;
+
+  &lt;!-- Google Analytics --&gt;
+&lt;script&gt;
+(function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+ga(&#39;create&#39;, &#39;UA-5784146-31&#39;, &#39;auto&#39;);
+ga(&#39;set&#39;, &#39;dimension8&#39;, &#39;open_page&#39;);
+ga(&#39;set&#39;, &#39;dimension9&#39;, /wp_sso_token/.test(document.cookie));
+ga(&#39;set&#39;, &#39;anonymizeIp&#39;, true);
+ga(&#39;send&#39;, &#39;pageview&#39;);
+&lt;/script&gt;
+&lt;!-- End Google Analytics --&gt;  &lt;style type=&quot;text/css&quot;&gt;
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.2a78c017.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.89e4be2e.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.10e93738.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.7eb7d0f7.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.dde45e52.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.5c7ed8d8.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.f0833f3b.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.317e96e5.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.9ddc7126.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.f97cb921.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.4884da16.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2128eeac.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2e1df62a.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.ef043f44.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.9f406804.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.57b36278.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.55fa9f4a.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.034997d0.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.b10eb959.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.30dc9fb2.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.909126fc.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.67641b90.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  &lt;/style&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    html {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background: #121212;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      font-family: &#39;spotify-circular&#39;,&#39;spotify-circular-cyrillic&#39;,&#39;spotify-circular-arabic&#39;,&#39;spotify-circular-hebrew&#39;,&#39;Helvetica Neue&#39;,Helvetica,Arial,&#39;Hiragino Kaku Gothic Pro&#39;,&#39;Meiryo&#39;,&#39;MS Gothic&#39;,sans-serif;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin: 40px 0 16px;
+      font-weight: 700;
+    }
+    p {
+      line-height: 24px;
+      max-width: 507px;
+      margin: 0 0 40px;
+      font-weight: 200;
+      display: inline-block;
+    }
+    a {
+      line-height: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1em;
+      display: block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      text-align: left;
+      margin: 10px;
+      white-space: pre-wrap;
+    }
+    .wrapper {
+      width: 100%;
+      vertical-align: middle;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 32px;
+    }
+    .content {
+      position: static;
+    }
+    .primary {
+      padding: 12px 32px;
+      background: #fff;
+      border-radius: 48px;
+      border: 1px solid #878787;
+      line-height: 24px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 36px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .primary:hover {
+      border-color: #000;
+      transform: scale(1.04);
+      text-decoration: none;
+    }
+
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        max-width: inherit;
+      }
+    }
+
+    @media (max-height: 550px) {
+      .wrapper {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        height: 100%;
+        padding: 16px;
+      }
+
+      .content {
+        vertical-align: middle;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      .icon {
+        text-align: right;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        max-width: 255px;
+        margin: 0;
+      }
+
+      a, a.primary {
+        display: none;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;script&gt;
+(function() {
+    var setFont = function() {
+        document.documentElement.className += &#39; fonts-loaded&#39;;
+    };
+    if (document.fonts &amp;&amp; document.fonts.load) {
+        var fontsToLoad = [&#39;200 1em \&#39;spotify-circular\&#39;&#39;, &#39;600 1em \&#39;spotify-circular\&#39;&#39;];
+
+        
+        
+        
+        Promise.all(
+            fontsToLoad.map(function(font) {
+                return document.fonts.load(font);
+            })
+        ).then(setFont).catch(setFont);
+    } else {
+        setFont();
+    }
+})();
+&lt;/script&gt;    &lt;div class=&quot;icon&quot;&gt;
+      &lt;svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; fill=&quot;none&quot;&gt;
+        &lt;path d=&quot;M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM44.6346 43.2461C44.4675 43.5452 44.243 43.8084 43.974 44.0207C43.705 44.2329 43.3968 44.3901 43.067 44.4831C42.7372 44.5762 42.3923 44.6033 42.052 44.5629C41.7118 44.5225 41.3828 44.4155 41.0839 44.2479C37.3441 42.1507 33.2113 40.8488 28.9446 40.4239C24.6689 39.984 20.3484 40.4315 16.2536 41.7386C15.5983 41.9361 14.8916 41.8683 14.2859 41.5497C13.6802 41.2311 13.2239 40.6872 13.0155 40.0353C12.807 39.3834 12.8631 38.6757 13.1716 38.0647C13.4801 37.4538 14.0163 36.9885 14.6646 36.7693C19.4411 35.2409 24.4823 34.7181 29.4707 35.2339C34.4487 35.7303 39.2705 37.2495 43.6339 39.6964C43.9328 39.8637 44.1958 40.0882 44.4079 40.3572C44.6199 40.6261 44.7769 40.9342 44.8699 41.2639C44.9628 41.5935 44.9898 41.9383 44.9495 42.2784C44.9091 42.6185 44.8021 42.9473 44.6346 43.2461ZM48.2282 34.1346C48.07 34.4385 47.8534 34.7081 47.591 34.9283C47.3285 35.1484 47.0252 35.3146 46.6984 35.4175C46.3717 35.5204 46.0279 35.5579 45.6866 35.5279C45.3454 35.4978 45.0134 35.4009 44.7096 35.2425C40.1053 32.8432 35.0849 31.3457 29.9186 30.8304C24.719 30.2897 19.464 30.7576 14.4418 32.2082C13.7769 32.3989 13.0635 32.318 12.4581 31.9834C11.8527 31.6488 11.4047 31.0877 11.2125 30.4232C11.0212 29.7584 11.1016 29.0449 11.4361 28.4394C11.7706 27.8338 12.3318 27.3859 12.9964 27.1939C18.6596 25.561 24.584 25.0325 30.4468 25.6371C36.2712 26.2201 41.9307 27.9096 47.1214 30.615C47.7347 30.9352 48.1958 31.4858 48.4033 32.1457C48.6109 32.8057 48.5479 33.5211 48.2282 34.1346V34.1346ZM49.5257 26.5543C49.1346 26.5543 48.7371 26.4664 48.3632 26.28C42.8937 23.5532 36.9738 21.8443 30.8925 21.2368C24.8013 20.6061 18.6461 21.0927 12.7296 22.6725C12.0691 22.8275 11.3741 22.7193 10.792 22.3706C10.21 22.0219 9.78655 21.4603 9.61155 20.8047C9.43655 20.1492 9.52372 19.4512 9.85458 18.8588C10.1854 18.2665 10.734 17.8262 11.3839 17.6314C17.9109 15.8911 24.7003 15.3541 31.4196 16.0468C38.1279 16.717 44.6582 18.6023 50.6914 21.6107C51.2167 21.8738 51.6378 22.3065 51.8867 22.8387C52.1356 23.3709 52.1976 23.9715 52.0628 24.5433C51.9279 25.1151 51.6041 25.6247 51.1437 25.9897C50.6833 26.3546 50.1132 26.5535 49.5257 26.5543Z&quot; fill=&quot;#1ED760&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    &lt;h1&gt;
+               Page not found
+          &lt;/h1&gt;
+    &lt;p&gt;
+                        We can’t seem to find the page you are looking for.
+                  &lt;/p&gt;
+
+    &lt;div&gt;
+          &lt;a href=&quot;https://open.spotify.com&quot; class=&quot;primary&quot;&gt;Home&lt;/a&gt;
+      &lt;a href=&quot;https://support.spotify.com/&quot;&gt;Help&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">09:28:01.069 [print] &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;title&gt;Page not found&lt;/title&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=9&quot;&gt;
+
+  &lt;meta name=&quot;google&quot; value=&quot;notranslate&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+  &lt;meta property=&quot;og:site_name&quot; content=&quot;Spotify&quot;&gt;
+  &lt;meta property=&quot;fb:app_id&quot; content=&quot;174829003346&quot;&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;32x32&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon32.8e66b099.png&quot; /&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;16x16&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon16.c498a969.png&quot; /&gt;
+
+  &lt;!-- Google Analytics --&gt;
+&lt;script&gt;
+(function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+ga(&#39;create&#39;, &#39;UA-5784146-31&#39;, &#39;auto&#39;);
+ga(&#39;set&#39;, &#39;dimension8&#39;, &#39;open_page&#39;);
+ga(&#39;set&#39;, &#39;dimension9&#39;, /wp_sso_token/.test(document.cookie));
+ga(&#39;set&#39;, &#39;anonymizeIp&#39;, true);
+ga(&#39;send&#39;, &#39;pageview&#39;);
+&lt;/script&gt;
+&lt;!-- End Google Analytics --&gt;  &lt;style type=&quot;text/css&quot;&gt;
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.2a78c017.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.89e4be2e.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.10e93738.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.7eb7d0f7.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.dde45e52.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.5c7ed8d8.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.f0833f3b.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.317e96e5.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.9ddc7126.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.f97cb921.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.4884da16.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2128eeac.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2e1df62a.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.ef043f44.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.9f406804.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.57b36278.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.55fa9f4a.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.034997d0.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.b10eb959.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.30dc9fb2.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.909126fc.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.67641b90.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  &lt;/style&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    html {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background: #121212;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      font-family: &#39;spotify-circular&#39;,&#39;spotify-circular-cyrillic&#39;,&#39;spotify-circular-arabic&#39;,&#39;spotify-circular-hebrew&#39;,&#39;Helvetica Neue&#39;,Helvetica,Arial,&#39;Hiragino Kaku Gothic Pro&#39;,&#39;Meiryo&#39;,&#39;MS Gothic&#39;,sans-serif;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin: 40px 0 16px;
+      font-weight: 700;
+    }
+    p {
+      line-height: 24px;
+      max-width: 507px;
+      margin: 0 0 40px;
+      font-weight: 200;
+      display: inline-block;
+    }
+    a {
+      line-height: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1em;
+      display: block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      text-align: left;
+      margin: 10px;
+      white-space: pre-wrap;
+    }
+    .wrapper {
+      width: 100%;
+      vertical-align: middle;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 32px;
+    }
+    .content {
+      position: static;
+    }
+    .primary {
+      padding: 12px 32px;
+      background: #fff;
+      border-radius: 48px;
+      border: 1px solid #878787;
+      line-height: 24px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 36px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .primary:hover {
+      border-color: #000;
+      transform: scale(1.04);
+      text-decoration: none;
+    }
+
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        max-width: inherit;
+      }
+    }
+
+    @media (max-height: 550px) {
+      .wrapper {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        height: 100%;
+        padding: 16px;
+      }
+
+      .content {
+        vertical-align: middle;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      .icon {
+        text-align: right;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        max-width: 255px;
+        margin: 0;
+      }
+
+      a, a.primary {
+        display: none;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;script&gt;
+(function() {
+    var setFont = function() {
+        document.documentElement.className += &#39; fonts-loaded&#39;;
+    };
+    if (document.fonts &amp;&amp; document.fonts.load) {
+        var fontsToLoad = [&#39;200 1em \&#39;spotify-circular\&#39;&#39;, &#39;600 1em \&#39;spotify-circular\&#39;&#39;];
+
+        
+        
+        
+        Promise.all(
+            fontsToLoad.map(function(font) {
+                return document.fonts.load(font);
+            })
+        ).then(setFont).catch(setFont);
+    } else {
+        setFont();
+    }
+})();
+&lt;/script&gt;    &lt;div class=&quot;icon&quot;&gt;
+      &lt;svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; fill=&quot;none&quot;&gt;
+        &lt;path d=&quot;M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM44.6346 43.2461C44.4675 43.5452 44.243 43.8084 43.974 44.0207C43.705 44.2329 43.3968 44.3901 43.067 44.4831C42.7372 44.5762 42.3923 44.6033 42.052 44.5629C41.7118 44.5225 41.3828 44.4155 41.0839 44.2479C37.3441 42.1507 33.2113 40.8488 28.9446 40.4239C24.6689 39.984 20.3484 40.4315 16.2536 41.7386C15.5983 41.9361 14.8916 41.8683 14.2859 41.5497C13.6802 41.2311 13.2239 40.6872 13.0155 40.0353C12.807 39.3834 12.8631 38.6757 13.1716 38.0647C13.4801 37.4538 14.0163 36.9885 14.6646 36.7693C19.4411 35.2409 24.4823 34.7181 29.4707 35.2339C34.4487 35.7303 39.2705 37.2495 43.6339 39.6964C43.9328 39.8637 44.1958 40.0882 44.4079 40.3572C44.6199 40.6261 44.7769 40.9342 44.8699 41.2639C44.9628 41.5935 44.9898 41.9383 44.9495 42.2784C44.9091 42.6185 44.8021 42.9473 44.6346 43.2461ZM48.2282 34.1346C48.07 34.4385 47.8534 34.7081 47.591 34.9283C47.3285 35.1484 47.0252 35.3146 46.6984 35.4175C46.3717 35.5204 46.0279 35.5579 45.6866 35.5279C45.3454 35.4978 45.0134 35.4009 44.7096 35.2425C40.1053 32.8432 35.0849 31.3457 29.9186 30.8304C24.719 30.2897 19.464 30.7576 14.4418 32.2082C13.7769 32.3989 13.0635 32.318 12.4581 31.9834C11.8527 31.6488 11.4047 31.0877 11.2125 30.4232C11.0212 29.7584 11.1016 29.0449 11.4361 28.4394C11.7706 27.8338 12.3318 27.3859 12.9964 27.1939C18.6596 25.561 24.584 25.0325 30.4468 25.6371C36.2712 26.2201 41.9307 27.9096 47.1214 30.615C47.7347 30.9352 48.1958 31.4858 48.4033 32.1457C48.6109 32.8057 48.5479 33.5211 48.2282 34.1346V34.1346ZM49.5257 26.5543C49.1346 26.5543 48.7371 26.4664 48.3632 26.28C42.8937 23.5532 36.9738 21.8443 30.8925 21.2368C24.8013 20.6061 18.6461 21.0927 12.7296 22.6725C12.0691 22.8275 11.3741 22.7193 10.792 22.3706C10.21 22.0219 9.78655 21.4603 9.61155 20.8047C9.43655 20.1492 9.52372 19.4512 9.85458 18.8588C10.1854 18.2665 10.734 17.8262 11.3839 17.6314C17.9109 15.8911 24.7003 15.3541 31.4196 16.0468C38.1279 16.717 44.6582 18.6023 50.6914 21.6107C51.2167 21.8738 51.6378 22.3065 51.8867 22.8387C52.1356 23.3709 52.1976 23.9715 52.0628 24.5433C51.9279 25.1151 51.6041 25.6247 51.1437 25.9897C50.6833 26.3546 50.1132 26.5535 49.5257 26.5543Z&quot; fill=&quot;#1ED760&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    &lt;h1&gt;
+               Page not found
+          &lt;/h1&gt;
+    &lt;p&gt;
+                        We can’t seem to find the page you are looking for.
+                  &lt;/p&gt;
+
+    &lt;div&gt;
+          &lt;a href=&quot;https://open.spotify.com&quot; class=&quot;primary&quot;&gt;Home&lt;/a&gt;
+      &lt;a href=&quot;https://support.spotify.com/&quot;&gt;Help&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref failed">7</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">09:28:01.077 src/test/java/examples/api/api.feature:7
+And status 200
+status code was: 404, expected: 200, response time in milliseconds: 825, url: https://open.spotify.com/collection/playlists/pet/250, response: 
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;title&gt;Page not found&lt;/title&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=9&quot;&gt;
+
+  &lt;meta name=&quot;google&quot; value=&quot;notranslate&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;
+  &lt;meta property=&quot;og:site_name&quot; content=&quot;Spotify&quot;&gt;
+  &lt;meta property=&quot;fb:app_id&quot; content=&quot;174829003346&quot;&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;32x32&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon32.8e66b099.png&quot; /&gt;
+  &lt;link rel=&quot;icon&quot; sizes=&quot;16x16&quot; type=&quot;image/png&quot; href=&quot;https://open.scdn.co/cdn/images/favicon16.c498a969.png&quot; /&gt;
+
+  &lt;!-- Google Analytics --&gt;
+&lt;script&gt;
+(function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+ga(&#39;create&#39;, &#39;UA-5784146-31&#39;, &#39;auto&#39;);
+ga(&#39;set&#39;, &#39;dimension8&#39;, &#39;open_page&#39;);
+ga(&#39;set&#39;, &#39;dimension9&#39;, /wp_sso_token/.test(document.cookie));
+ga(&#39;set&#39;, &#39;anonymizeIp&#39;, true);
+ga(&#39;send&#39;, &#39;pageview&#39;);
+&lt;/script&gt;
+&lt;!-- End Google Analytics --&gt;  &lt;style type=&quot;text/css&quot;&gt;
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.2a78c017.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.89e4be2e.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 200;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.8d0a45cc.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.10e93738.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Bold.7eb7d0f7.ttf&quot;) format(&#39;truetype&#39;);
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.dde45e52.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.5c7ed8d8.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Light.f0833f3b.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-arabic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.317e96e5.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.9ddc7126.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIAraOnly-Bold.f97cb921.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.4884da16.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2128eeac.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Light.2e1df62a.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-hebrew&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.ef043f44.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.9f406804.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUIHbrOnly-Bold.57b36278.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.55fa9f4a.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.034997d0.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Light.b10eb959.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: &#39;spotify-circular-cyrillic&#39;;
+      src: url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.30dc9fb2.woff2&quot;) format(&#39;woff2&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.909126fc.woff&quot;) format(&#39;woff&#39;),
+          url(&quot;https://open.scdn.co/cdn/fonts/CircularSpUICyrOnly-Bold.67641b90.otf&quot;) format(&#39;opentype&#39;);
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+  &lt;/style&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    html {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+    body {
+      background: #121212;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      font-family: &#39;spotify-circular&#39;,&#39;spotify-circular-cyrillic&#39;,&#39;spotify-circular-arabic&#39;,&#39;spotify-circular-hebrew&#39;,&#39;Helvetica Neue&#39;,Helvetica,Arial,&#39;Hiragino Kaku Gothic Pro&#39;,&#39;Meiryo&#39;,&#39;MS Gothic&#39;,sans-serif;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      margin: 40px 0 16px;
+      font-weight: 700;
+    }
+    p {
+      line-height: 24px;
+      max-width: 507px;
+      margin: 0 0 40px;
+      font-weight: 200;
+      display: inline-block;
+    }
+    a {
+      line-height: 24px;
+      text-decoration: none;
+      font-weight: 700;
+      color: #fff;
+      font-size: 1em;
+      display: block;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    pre {
+      text-align: left;
+      margin: 10px;
+      white-space: pre-wrap;
+    }
+    .wrapper {
+      width: 100%;
+      vertical-align: middle;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 32px;
+    }
+    .content {
+      position: static;
+    }
+    .primary {
+      padding: 12px 32px;
+      background: #fff;
+      border-radius: 48px;
+      border: 1px solid #878787;
+      line-height: 24px;
+      text-align: center;
+      color: #000;
+      margin-bottom: 36px;
+      white-space: nowrap;
+      display: inline-block;
+    }
+    .primary:hover {
+      border-color: #000;
+      transform: scale(1.04);
+      text-decoration: none;
+    }
+
+    @media (max-width: 450px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        max-width: inherit;
+      }
+    }
+
+    @media (max-height: 550px) {
+      .wrapper {
+        position: relative;
+        transform: none;
+        top: auto;
+        left: auto;
+        height: 100%;
+        padding: 16px;
+      }
+
+      .content {
+        vertical-align: middle;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      .icon {
+        text-align: right;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 12px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 200;
+        max-width: 255px;
+        margin: 0;
+      }
+
+      a, a.primary {
+        display: none;
+      }
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+    &lt;script&gt;
+(function() {
+    var setFont = function() {
+        document.documentElement.className += &#39; fonts-loaded&#39;;
+    };
+    if (document.fonts &amp;&amp; document.fonts.load) {
+        var fontsToLoad = [&#39;200 1em \&#39;spotify-circular\&#39;&#39;, &#39;600 1em \&#39;spotify-circular\&#39;&#39;];
+
+        
+        
+        
+        Promise.all(
+            fontsToLoad.map(function(font) {
+                return document.fonts.load(font);
+            })
+        ).then(setFont).catch(setFont);
+    } else {
+        setFont();
+    }
+})();
+&lt;/script&gt;    &lt;div class=&quot;icon&quot;&gt;
+      &lt;svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; fill=&quot;none&quot;&gt;
+        &lt;path d=&quot;M30 0C13.4314 0 0 13.4314 0 30C0 46.5686 13.4314 60 30 60C46.5686 60 60 46.5686 60 30C60 13.4314 46.5686 0 30 0ZM44.6346 43.2461C44.4675 43.5452 44.243 43.8084 43.974 44.0207C43.705 44.2329 43.3968 44.3901 43.067 44.4831C42.7372 44.5762 42.3923 44.6033 42.052 44.5629C41.7118 44.5225 41.3828 44.4155 41.0839 44.2479C37.3441 42.1507 33.2113 40.8488 28.9446 40.4239C24.6689 39.984 20.3484 40.4315 16.2536 41.7386C15.5983 41.9361 14.8916 41.8683 14.2859 41.5497C13.6802 41.2311 13.2239 40.6872 13.0155 40.0353C12.807 39.3834 12.8631 38.6757 13.1716 38.0647C13.4801 37.4538 14.0163 36.9885 14.6646 36.7693C19.4411 35.2409 24.4823 34.7181 29.4707 35.2339C34.4487 35.7303 39.2705 37.2495 43.6339 39.6964C43.9328 39.8637 44.1958 40.0882 44.4079 40.3572C44.6199 40.6261 44.7769 40.9342 44.8699 41.2639C44.9628 41.5935 44.9898 41.9383 44.9495 42.2784C44.9091 42.6185 44.8021 42.9473 44.6346 43.2461ZM48.2282 34.1346C48.07 34.4385 47.8534 34.7081 47.591 34.9283C47.3285 35.1484 47.0252 35.3146 46.6984 35.4175C46.3717 35.5204 46.0279 35.5579 45.6866 35.5279C45.3454 35.4978 45.0134 35.4009 44.7096 35.2425C40.1053 32.8432 35.0849 31.3457 29.9186 30.8304C24.719 30.2897 19.464 30.7576 14.4418 32.2082C13.7769 32.3989 13.0635 32.318 12.4581 31.9834C11.8527 31.6488 11.4047 31.0877 11.2125 30.4232C11.0212 29.7584 11.1016 29.0449 11.4361 28.4394C11.7706 27.8338 12.3318 27.3859 12.9964 27.1939C18.6596 25.561 24.584 25.0325 30.4468 25.6371C36.2712 26.2201 41.9307 27.9096 47.1214 30.615C47.7347 30.9352 48.1958 31.4858 48.4033 32.1457C48.6109 32.8057 48.5479 33.5211 48.2282 34.1346V34.1346ZM49.5257 26.5543C49.1346 26.5543 48.7371 26.4664 48.3632 26.28C42.8937 23.5532 36.9738 21.8443 30.8925 21.2368C24.8013 20.6061 18.6461 21.0927 12.7296 22.6725C12.0691 22.8275 11.3741 22.7193 10.792 22.3706C10.21 22.0219 9.78655 21.4603 9.61155 20.8047C9.43655 20.1492 9.52372 19.4512 9.85458 18.8588C10.1854 18.2665 10.734 17.8262 11.3839 17.6314C17.9109 15.8911 24.7003 15.3541 31.4196 16.0468C38.1279 16.717 44.6582 18.6023 50.6914 21.6107C51.2167 21.8738 51.6378 22.3065 51.8867 22.8387C52.1356 23.3709 52.1976 23.9715 52.0628 24.5433C51.9279 25.1151 51.6041 25.6247 51.1437 25.9897C50.6833 26.3546 50.1132 26.5535 49.5257 26.5543Z&quot; fill=&quot;#1ED760&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;content&quot;&gt;
+    &lt;h1&gt;
+               Page not found
+          &lt;/h1&gt;
+    &lt;p&gt;
+                        We can’t seem to find the page you are looking for.
+                  &lt;/p&gt;
+
+    &lt;div&gt;
+          &lt;a href=&quot;https://open.spotify.com&quot; class=&quot;primary&quot;&gt;Home&lt;/a&gt;
+      &lt;a href=&quot;https://support.spotify.com/&quot;&gt;Help&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+src/test/java/examples/api/api.feature:7
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

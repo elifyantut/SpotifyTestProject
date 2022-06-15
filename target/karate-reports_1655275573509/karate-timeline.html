@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/api\/api[1:28]","start":1655275558102,"end":1655275559733,"title":"src\/test\/java\/examples\/api\/api[1:28] 09:45:58.102-09:45:59.733 Get playlist user"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/api\/api[2:35]","start":1655275559737,"end":1655275560228,"title":"src\/test\/java\/examples\/api\/api[2:35] 09:45:59.737-09:46:00.228 Create playlist"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/api\/api[3:44]","start":1655275560245,"end":1655275560586,"title":"src\/test\/java\/examples\/api\/api[3:44] 09:46:00.245-09:46:00.586 Search song"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/api\/api[4:53]","start":1655275560587,"end":1655275561473,"title":"src\/test\/java\/examples\/api\/api[4:53] 09:46:00.587-09:46:01.473 Add items to playlist"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
