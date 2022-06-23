@@ -1,9 +1,9 @@
-13:27:45.608 karate.env system property was:  
-13:27:45.737 preferred port 9515 not available, will use: 60837
-13:28:02.491 request:
+13:45:58.727 karate.env system property was:  
+13:45:58.806 preferred port 9515 not available, will use: 63148
+13:46:13.990 request:
 1 > POST https://api.spotify.com/v1/users/316s7gmalqadz6tzvbgbmv342grm/playlists
 1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg
+1 > Authorization: Bearer BQA1iWqQedZ6bEUDxR-1gMfRteKlc6M_FWct9J9GAV5oBng1fYlbLyIeYlzmtriaqkMkJet9-HfTGSSvLzQueMz5ngWXhSeKclB0RivzwH_rJp7TZ_4__qcD80zxY4X8MnDzRPGZzl8SEK6PUXJnTGmyRxJayiE_l1xdq3OYIo1LRpi-rlNXShZ-a2kIY9gdIiEikl2uFXkGU_zmA4lPHIGBtUVMn0LUJvPZFwVQ-7xqWqqbLWT1kv5EBwZVCe2edBkfHgiK8CimPyAf
 1 > Connection: Keep-Alive
 1 > Content-Length: 82
 1 > Content-Type: application/json; charset=UTF-8
@@ -11,7 +11,7 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
 {"name":"MentorLabs Faz2","description":"New playlist description","public":false}
 
-13:28:03.937 response time in milliseconds: 1434,09
+13:46:14.880 response time in milliseconds: 888,60
 1 < 201
 1 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 1 < Transfer-Encoding: chunked
@@ -23,8 +23,8 @@
 1 < access-control-max-age: 604800
 1 < cache-control: private, max-age=0
 1 < content-type: application/json; charset=utf-8
-1 < date: Thu, 23 Jun 2022 10:28:03 GMT
-1 < location: https://api.spotify.com/v1/playlists/6FWTLOBOThg0mtoS3WSSJM
+1 < date: Thu, 23 Jun 2022 10:46:14 GMT
+1 < location: https://api.spotify.com/v1/playlists/0cVHt5ZXyJSatNHlhJ2L09
 1 < server: envoy
 1 < strict-transport-security: max-age=31536000
 1 < x-content-type-options: nosniff
@@ -33,18 +33,18 @@
   "collaborative" : false,
   "description" : "New playlist description",
   "external_urls" : {
-    "spotify" : "https://open.spotify.com/playlist/6FWTLOBOThg0mtoS3WSSJM"
+    "spotify" : "https://open.spotify.com/playlist/0cVHt5ZXyJSatNHlhJ2L09"
   },
   "followers" : {
     "href" : null,
     "total" : 0
   },
-  "href" : "https://api.spotify.com/v1/playlists/6FWTLOBOThg0mtoS3WSSJM",
-  "id" : "6FWTLOBOThg0mtoS3WSSJM",
+  "href" : "https://api.spotify.com/v1/playlists/0cVHt5ZXyJSatNHlhJ2L09",
+  "id" : "0cVHt5ZXyJSatNHlhJ2L09",
   "images" : [ ],
   "name" : "MentorLabs Faz2",
   "owner" : {
-    "display_name" : "Elif N.Y",
+    "display_name" : "elif",
     "external_urls" : {
       "spotify" : "https://open.spotify.com/user/316s7gmalqadz6tzvbgbmv342grm"
     },
@@ -55,9 +55,9 @@
   },
   "primary_color" : null,
   "public" : false,
-  "snapshot_id" : "MSxmMTc0OWIyYWFhNGM3YmQ3ODBkNGYxOWI4NTBiZWQ5OGE4NzEzNmYz",
+  "snapshot_id" : "MSw0MzViNzBhNmZjZTc2YmVhOTY0ZTM2NWQ0N2FkNGUyYzViM2RmYWQ0",
   "tracks" : {
-    "href" : "https://api.spotify.com/v1/playlists/6FWTLOBOThg0mtoS3WSSJM/tracks",
+    "href" : "https://api.spotify.com/v1/playlists/0cVHt5ZXyJSatNHlhJ2L09/tracks",
     "items" : [ ],
     "limit" : 100,
     "next" : null,
@@ -66,13 +66,13 @@
     "total" : 0
   },
   "type" : "playlist",
-  "uri" : "spotify:playlist:6FWTLOBOThg0mtoS3WSSJM"
+  "uri" : "spotify:playlist:0cVHt5ZXyJSatNHlhJ2L09"
 }
 
-13:28:03.973 request:
-2 > POST https://api.spotify.com/v1/playlists/6FWTLOBOThg0mtoS3WSSJM/tracks
+13:46:14.900 request:
+2 > POST https://api.spotify.com/v1/playlists/0cVHt5ZXyJSatNHlhJ2L09/tracks
 2 > Accept-Encoding: gzip,deflate
-2 > Authorization: Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg
+2 > Authorization: Bearer BQA1iWqQedZ6bEUDxR-1gMfRteKlc6M_FWct9J9GAV5oBng1fYlbLyIeYlzmtriaqkMkJet9-HfTGSSvLzQueMz5ngWXhSeKclB0RivzwH_rJp7TZ_4__qcD80zxY4X8MnDzRPGZzl8SEK6PUXJnTGmyRxJayiE_l1xdq3OYIo1LRpi-rlNXShZ-a2kIY9gdIiEikl2uFXkGU_zmA4lPHIGBtUVMn0LUJvPZFwVQ-7xqWqqbLWT1kv5EBwZVCe2edBkfHgiK8CimPyAf
 2 > Connection: Keep-Alive
 2 > Content-Length: 62
 2 > Content-Type: application/json; charset=UTF-8
@@ -80,7 +80,7 @@
 2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
 {"uris":["spotify:track:3MrRksHupTVEQ7YbA0FsZK"],"position":0}
 
-13:28:04.567 response time in milliseconds: 591,21
+13:46:15.521 response time in milliseconds: 620,73
 2 < 201
 2 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 2 < Transfer-Encoding: chunked
@@ -92,25 +92,25 @@
 2 < access-control-max-age: 604800
 2 < cache-control: private, max-age=0
 2 < content-type: application/json; charset=utf-8
-2 < date: Thu, 23 Jun 2022 10:28:04 GMT
+2 < date: Thu, 23 Jun 2022 10:46:15 GMT
 2 < server: envoy
 2 < strict-transport-security: max-age=31536000
 2 < x-content-type-options: nosniff
 2 < x-robots-tag: noindex, nofollow
 {
-  "snapshot_id" : "MyxiYWE4MGJkNDQ0MjQyZWY0NmIyZjJjZGQ4NmEyMDQ1YmFiZTVlY2Jk"
+  "snapshot_id" : "MixiNjBjMzQwNmYxNTQ3NGU2ZTRjYzdkMjk2NzdlMjM3NmZmZGZkZmRh"
 }
 
-13:28:14.713 request:
+13:46:24.946 request:
 3 > GET https://api.spotify.com/v1/me/player/currently-playing
 3 > Accept-Encoding: gzip,deflate
-3 > Authorization: Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg
+3 > Authorization: Bearer BQA1iWqQedZ6bEUDxR-1gMfRteKlc6M_FWct9J9GAV5oBng1fYlbLyIeYlzmtriaqkMkJet9-HfTGSSvLzQueMz5ngWXhSeKclB0RivzwH_rJp7TZ_4__qcD80zxY4X8MnDzRPGZzl8SEK6PUXJnTGmyRxJayiE_l1xdq3OYIo1LRpi-rlNXShZ-a2kIY9gdIiEikl2uFXkGU_zmA4lPHIGBtUVMn0LUJvPZFwVQ-7xqWqqbLWT1kv5EBwZVCe2edBkfHgiK8CimPyAf
 3 > Connection: Keep-Alive
 3 > Host: api.spotify.com
 3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
 
-13:28:15.007 response time in milliseconds: 297,36
-3 < 401
+13:46:25.785 response time in milliseconds: 837,18
+3 < 200
 3 < Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 3 < Transfer-Encoding: chunked
 3 < Via: HTTP/2 edgeproxy, 1.1 google
@@ -121,100 +121,103 @@
 3 < access-control-max-age: 604800
 3 < cache-control: private, max-age=0
 3 < content-type: application/json; charset=utf-8
-3 < date: Thu, 23 Jun 2022 10:28:15 GMT
+3 < date: Thu, 23 Jun 2022 10:46:25 GMT
 3 < server: envoy
 3 < strict-transport-security: max-age=31536000
 3 < x-content-type-options: nosniff
 3 < x-robots-tag: noindex, nofollow
 {
-  "error" : {
-    "status" : 401,
-    "message" : "Permissions missing"
-  }
-}
-
-Yd2vXMi3b",
-      "id" : "0VjIjW4GlUZAMYd2vXMi3b",
-      "is_local" : false,
-      "name" : "Blinding Lights",
-      "popularity" : 90,
-      "preview_url" : null,
-      "track_number" : 9,
-      "type" : "track",
-      "uri" : "spotify:track:0VjIjW4GlUZAMYd2vXMi3b"
-    }, {
-      "album" : {
-        "album_type" : "single",
-        "artists" : [ {
-          "external_urls" : {
-            "spotify" : "https://open.spotify.com/artist/574qIjE9UTvfSvtnIrdLaE"
-          },
-          "href" : "https://api.spotify.com/v1/artists/574qIjE9UTvfSvtnIrdLaE",
-          "id" : "574qIjE9UTvfSvtnIrdLaE",
-          "name" : "Loi",
-          "type" : "artist",
-          "uri" : "spotify:artist:574qIjE9UTvfSvtnIrdLaE"
-        } ],
-        "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-        "external_urls" : {
-          "spotify" : "https://open.spotify.com/album/6pQZPa398NswBXGYyqHH7y"
-        },
-        "href" : "https://api.spotify.com/v1/albums/6pQZPa398NswBXGYyqHH7y",
-        "id" : "6pQZPa398NswBXGYyqHH7y",
-        "images" : [ {
-          "height" : 640,
-          "url" : "https://i.scdn.co/image/ab67616d0000b2737a766d6855ae295b6a262cf5",
-          "width" : 640
-        }, {
-          "height" : 300,
-          "url" : "https://i.scdn.co/image/ab67616d00001e027a766d6855ae295b6a262cf5",
-          "width" : 300
-        }, {
-          "height" : 64,
-          "url" : "https://i.scdn.co/image/ab67616d000048517a766d6855ae295b6a262cf5",
-          "width" : 64
-        } ],
-        "name" : "Blinding Lights",
-        "release_date" : "2021-09-17",
-        "release_date_precision" : "day",
-        "total_tracks" : 1,
-        "type" : "album",
-        "uri" : "spotify:album:6pQZPa398NswBXGYyqHH7y"
-      },
+  "timestamp" : 1655981183883,
+  "context" : {
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/playlist/1wwRbK8Tigb6XU2LWkbKw1"
+    },
+    "href" : "https://api.spotify.com/v1/playlists/1wwRbK8Tigb6XU2LWkbKw1",
+    "type" : "playlist",
+    "uri" : "spotify:playlist:1wwRbK8Tigb6XU2LWkbKw1"
+  },
+  "progress_ms" : 145210,
+  "item" : {
+    "album" : {
+      "album_type" : "album",
       "artists" : [ {
         "external_urls" : {
-          "spotify" : "https://open.spotify.com/artist/574qIjE9UTvfSvtnIrdLaE"
+          "spotify" : "https://open.spotify.com/artist/7Js6Lde8thlIHXggv2SCBz"
         },
-        "href" : "https://api.spotify.com/v1/artists/574qIjE9UTvfSvtnIrdLaE",
-        "id" : "574qIjE9UTvfSvtnIrdLaE",
-        "name" : "Loi",
+        "href" : "https://api.spotify.com/v1/artists/7Js6Lde8thlIHXggv2SCBz",
+        "id" : "7Js6Lde8thlIHXggv2SCBz",
+        "name" : "Europe",
         "type" : "artist",
-        "uri" : "spotify:artist:574qIjE9UTvfSvtnIrdLaE"
+        "uri" : "spotify:artist:7Js6Lde8thlIHXggv2SCBz"
       } ],
       "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
-      "disc_number" : 1,
-      "duration_ms" : 147368,
-      "explicit" : false,
-      "external_ids" : {
-        "isrc" : "DEA622100968"
-      },
       "external_urls" : {
-        "spotify" : "https://open.spotify.com/track/0cQJGoRki2avKVodXEmr0d"
+        "spotify" : "https://open.spotify.com/album/5Jkd47JEaCU1g4DcGBnHm3"
       },
-      "href" : "https://api.spotify.com/v1/tracks/0cQJGoRki2avKVodXEmr0d",
-      "id" : "0cQJGoRki2avKVodXEmr0d",
-      "is_local" : false,
-      "name" : "Blinding Lights",
-      "popularity" : 67,
-      "preview_url" : "https://p.scdn.co/mp3-preview/5bbf57573b56fb4a712f4268bab51b05ab0dbc94?cid=774b29d4f13844c495f206cafdad9c86",
-      "track_number" : 1,
-      "type" : "track",
-      "uri" : "spotify:track:0cQJGoRki2avKVodXEmr0d"
-    }, {
-      "album" : {
-        "album_type" : "compilation",
-        "artists" : [ {
-          "external_urls" : {
+      "href" : "https://api.spotify.com/v1/albums/5Jkd47JEaCU1g4DcGBnHm3",
+      "id" : "5Jkd47JEaCU1g4DcGBnHm3",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab67616d0000b2732d925cec3072ed1b74e5188f",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/ab67616d00001e022d925cec3072ed1b74e5188f",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/ab67616d000048512d925cec3072ed1b74e5188f",
+        "width" : 64
+      } ],
+      "name" : "The Final Countdown (Expanded Edition)",
+      "release_date" : "1986",
+      "release_date_precision" : "year",
+      "total_tracks" : 13,
+      "type" : "album",
+      "uri" : "spotify:album:5Jkd47JEaCU1g4DcGBnHm3"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/7Js6Lde8thlIHXggv2SCBz"
+      },
+      "href" : "https://api.spotify.com/v1/artists/7Js6Lde8thlIHXggv2SCBz",
+      "id" : "7Js6Lde8thlIHXggv2SCBz",
+      "name" : "Europe",
+      "type" : "artist",
+      "uri" : "spotify:artist:7Js6Lde8thlIHXggv2SCBz"
+    } ],
+    "available_markets" : [ "AD", "AE", "AG", "AL", "AM", "AO", "AR", "AT", "AU", "AZ", "BA", "BB", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BN", "BO", "BR", "BS", "BT", "BW", "BY", "BZ", "CA", "CD", "CG", "CH", "CI", "CL", "CM", "CO", "CR", "CV", "CW", "CY", "CZ", "DE", "DJ", "DK", "DM", "DO", "DZ", "EC", "EE", "EG", "ES", "FI", "FJ", "FM", "FR", "GA", "GB", "GD", "GE", "GH", "GM", "GN", "GQ", "GR", "GT", "GW", "GY", "HK", "HN", "HR", "HT", "HU", "ID", "IE", "IL", "IN", "IQ", "IS", "IT", "JM", "JO", "JP", "KE", "KG", "KH", "KI", "KM", "KN", "KR", "KW", "KZ", "LA", "LB", "LC", "LI", "LK", "LR", "LS", "LT", "LU", "LV", "LY", "MA", "MC", "MD", "ME", "MG", "MH", "MK", "ML", "MN", "MO", "MR", "MT", "MU", "MV", "MW", "MX", "MY", "MZ", "NA", "NE", "NG", "NI", "NL", "NO", "NP", "NR", "NZ", "OM", "PA", "PE", "PG", "PH", "PK", "PL", "PS", "PT", "PW", "PY", "QA", "RO", "RS", "RW", "SA", "SB", "SC", "SE", "SG", "SI", "SK", "SL", "SM", "SN", "SR", "ST", "SV", "SZ", "TD", "TG", "TH", "TJ", "TL", "TN", "TO", "TR", "TT", "TV", "TW", "TZ", "UA", "UG", "US", "UY", "UZ", "VC", "VE", "VN", "VU", "WS", "XK", "ZA", "ZM", "ZW" ],
+    "disc_number" : 1,
+    "duration_ms" : 310333,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USSM18600196"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3MrRksHupTVEQ7YbA0FsZK"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3MrRksHupTVEQ7YbA0FsZK",
+    "id" : "3MrRksHupTVEQ7YbA0FsZK",
+    "is_local" : false,
+    "name" : "The Final Countdown",
+    "popularity" : 77,
+    "preview_url" : "https://p.scdn.co/mp3-preview/907f765ae07f55b73af6a2e7918a4273168fef48?cid=774b29d4f13844c495f206cafdad9c86",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:3MrRksHupTVEQ7YbA0FsZK"
+  },
+  "currently_playing_type" : "track",
+  "actions" : {
+    "disallows" : {
+      "resuming" : true,
+      "skipping_prev" : true
+    }
+  },
+  "is_playing" : true
+}
+
+13:46:25.799 [print] Song Matched
+  "external_urls" : {
             "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
           },
           "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",

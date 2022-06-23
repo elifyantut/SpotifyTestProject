@@ -4,7 +4,7 @@ Feature: Api and Ui Senaryosu
     * def urlHome = 'https://open.spotify.com/'
     * def user_id = '316s7gmalqadz6tzvbgbmv342grm'
     * def s_id = { a :'7FldR5LCgIDhYlaG87NTAx'}
-    * def token = 'Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg'
+    * def token = 'Bearer BQA1iWqQedZ6bEUDxR-1gMfRteKlc6M_FWct9J9GAV5oBng1fYlbLyIeYlzmtriaqkMkJet9-HfTGSSvLzQueMz5ngWXhSeKclB0RivzwH_rJp7TZ_4__qcD80zxY4X8MnDzRPGZzl8SEK6PUXJnTGmyRxJayiE_l1xdq3OYIo1LRpi-rlNXShZ-a2kIY9gdIiEikl2uFXkGU_zmA4lPHIGBtUVMn0LUJvPZFwVQ-7xqWqqbLWT1kv5EBwZVCe2edBkfHgiK8CimPyAf'
     * def playlist =
     """
  {
@@ -60,8 +60,7 @@ Feature: Api and Ui Senaryosu
       And path 'me/player/currently-playing'
       And header Authorization = token
       And method get
-      * def matchsong = karate.jsonPath(response,"$.['item'].['name']")
-      And match matchsong == 'The Final Countdown'
+      And match response.item.name == 'The Final Countdown'
       And print 'Song Matched'
 
 
