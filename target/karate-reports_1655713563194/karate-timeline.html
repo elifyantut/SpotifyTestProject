@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[1:26]","start":1655713459363,"end":1655713470821,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[1:26] 11:24:19.363-11:24:30.821 Login"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[4:63]","start":1655713470973,"end":1655713472415,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[4:63] 11:24:30.973-11:24:32.415 Add items to playlist"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[5:74]","start":1655713472421,"end":1655713472995,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[5:74] 11:24:32.421-11:24:32.995 Playing song","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

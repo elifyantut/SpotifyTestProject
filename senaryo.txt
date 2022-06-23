@@ -1,0 +1,7 @@
+Sisteme başarılı şekilde giriş yapılır.
+Elif adında Playlist oluşturulur.(api)
+The Weeknd sanatçısını takip edilir.
+Scroll ettirerek her çalıştırıldığında sırayla şarkıları beğenir.
+Profilden isim değişikliği yapılır.
+Oturumu kapatılır
+.

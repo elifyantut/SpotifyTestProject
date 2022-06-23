@@ -1,0 +1,57 @@
+<testsuite failures="0" name="src/test/java/examples/endToEnd/endToEnd.feature" skipped="0" tests="1" time="56.567396">
+  <testcase classname="src.test.java.examples.endToEnd.endToEnd" name="endtoend senaryosu" time="56.567396">
+    <system-out>* configure driver = { type:'chromedriver' , executable: 'src\\test\\resources\\chromedriver.exe'} . passed
+* def user_id = '316s7gmalqadz6tzvbgbmv342grm' ............................ passed
+* def token = 'Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg' . passed
+* def playlist = .......................................................... passed
+Given driver "https://open.spotify.com/" .................................. passed
+* maximize() .............................................................. passed
+When delay(2000) .......................................................... passed
+And click(".Button-qlcn5g-0.jvEinx") ...................................... passed
+And delay(2000) ........................................................... passed
+And input("//input[@id='login-username']",'elifnur.yantut@testinium.com') . passed
+And delay(2000) ........................................................... passed
+And input("//input[@id='login-password']",'Elif.123') ..................... passed
+And click("//p[@class='Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye eKDPqH' and text()='Oturum Aç']") . passed
+And waitFor("//p[@class='Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye eKDPqH' and text()='Oturum Aç']") . passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/users/'+user_id+'/playlists' ................................... passed
+And header Authorization = token .......................................... passed
+And request playlist ...................................................... passed
+When method POST .......................................................... passed
+And refresh() ............................................................. passed
+And delay(4000) ........................................................... passed
+And click("//a[@href='/search']") ......................................... passed
+And delay(3000) ........................................................... passed
+And input("//input[@class='Type__TypeElement-goli3j-0 ebHsEf QO9loc33XC50mMRUCIvf']",'The Weeknd') . passed
+And delay(2000) ........................................................... passed
+And click("//div[@class='Type__TypeElement-goli3j-0 fQToy nk6UgB4GUYNoAcPtAQaG']") . passed
+And delay(2000) ........................................................... passed
+And click("//button[@class='aAr9nYtPsG7P2LRzciXc']") ...................... passed
+And delay(2000) ........................................................... passed
+And click("//button[@data-testid='top-bar-back-button']") ................. passed
+And delay(2000) ........................................................... passed
+And scroll("//div[@class='iCQtmPqY0QvkumAOuCjr']/div[@class='Type__TypeElement-goli3j-0 fCtMzo t_yrXoUO3qGsJS4Y6iXX standalone-ellipsis-one-line' and text()='Starboy']") . passed
+And delay(2000) ........................................................... passed
+And click("//button[@class='Fm7C3gdh5Lsc9qSXrQwO tGKwoPuvNBNK3TzCS5OH']") . passed
+And delay(2000) ........................................................... passed
+And click("//button[@class='odcjv30UQnjaTv4sylc0']") ...................... passed
+And delay(2000) ........................................................... passed
+And click("//span[@class='Type__TypeElement-goli3j-0 ebHsEf ellipsis-one-line PDPsYDh4ntfQE3B4duUI' and text()='Profil']") . passed
+And delay(2000) ........................................................... passed
+And click("//span[@class='o4KVKZmeHsoRZ2Ltl078']") ........................ passed
+And delay(2000) ........................................................... passed
+And click("//input[@id='user-edit-name']") ................................ passed
+And delay(2000) ........................................................... passed
+And clear("//input[@id='user-edit-name']") ................................ passed
+And delay(2000) ........................................................... passed
+And input("//input[@id='user-edit-name']",'Elif N.Y') ..................... passed
+And delay(2000) ........................................................... passed
+And click("//div[@class='ButtonInner-sc-14ud5tc-0 iebPZv encore-inverted-light-set']") . passed
+And delay(2000) ........................................................... passed
+And click("//button[@class='odcjv30UQnjaTv4sylc0']") ...................... passed
+And delay(2000) ........................................................... passed
+And click("//button[@data-testid='user-widget-dropdown-logout']") ......... passed
+And delay(2000) ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

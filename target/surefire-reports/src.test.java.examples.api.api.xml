@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/examples/api/api.feature" skipped="0" tests="1" time="1.323868">
+  <testcase classname="src.test.java.examples.api.api" name="Search song" time="1.323868">
+    <system-out>* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def user_id = '316s7gmalqadz6tzvbgbmv342grm' ............................ passed
+* def token = 'Bearer BQB2WJ2pSR55lpxC5XAQ9EN0U_mfYPsqSldSWJBfilL4fKb-f7O0trMRJkeb3Zy0eg979RNd3GKdnNPjpMGp_hmovOjnEVzJEP6GLT_rnesI8RWIdKw6Q_Cztm_5Z0m7KGaPr0V3jwxg69GwCqyy4v-sTZNKo7XglWAxfSv380w7ix6Jhm-N_I3ovU_FcNvqrf_5GgCoo9eoElFBEJ2ZcQ_BxuwKDSyCXbwKG4Q043J-_tIhjFsX-axgqTWAAFYFc6aLvQLHaQSefQ' . passed
+* def playlist = .......................................................... passed
+* def track = ............................................................. passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/search' ........................................................ passed
+And header Authorization = token .......................................... passed
+And param q = 'Blinding Lights' ........................................... passed
+And param type = 'track' .................................................. passed
+When method GET ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

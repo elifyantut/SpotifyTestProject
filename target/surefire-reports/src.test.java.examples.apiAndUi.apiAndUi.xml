@@ -1,0 +1,51 @@
+<testsuite failures="1" name="src/test/java/examples/apiAndUi/apiAndUi.feature" skipped="0" tests="1" time="29.345139">
+  <testcase classname="src.test.java.examples.apiAndUi.apiAndUi" name="elif" time="29.345139">
+    <failure message="apiAndUi.feature:63 - evaluation (js) failed: karate.jsonPath(response,&quot;$.['item'].['name']&quot;), com.jayway.jsonpath.PathNotFoundException: Missing property in path $['item']&#10;stack trace: com.jayway.jsonpath.internal.path.PathToken.handleObjectProperty(PathToken.java:72)">* configure driver = { type:'chromedriver' , executable: 'src\\test\\resources\\chromedriver.exe'} . passed
+* def urlHome = 'https://open.spotify.com/' ............................... passed
+* def user_id = '316s7gmalqadz6tzvbgbmv342grm' ............................ passed
+* def s_id = { a :'7FldR5LCgIDhYlaG87NTAx'} ............................... passed
+* def token = 'Bearer BQAbULwTy5IQ8BYmZfpR2Un0rsgVsOcZLrCZ-SA6J4JtBAH_pGHmjFBnFUGy_2dw8-nFrFg0KiOI6eXP52ptqdCsWvPcyXpNpewAw9_VnFezvMW2oFJubzi5bdaGJDS4gI8LN5XJMY-tvsCz1cVWZ0UYMUwAUFOxoQMRQHp59F56D5abx0tqMPEJW_4vim9_uOClX82KBCs73Cl7maxGqbGN7eYpPDkyCzijJJn77KH6a6dBWoENFSFpRhrl35IDz3T0fVvDNUM7bg' . passed
+* def playlist = .......................................................... passed
+* def track = ............................................................. passed
+Given driver "https://open.spotify.com/" .................................. passed
+* maximize() .............................................................. passed
+When delay(2000) .......................................................... passed
+And click('.Button-qlcn5g-0.jvEinx') ...................................... passed
+And delay(2000) ........................................................... passed
+And input("//input[@id='login-username']",'elifnur.yantut@testinium.com') . passed
+And delay(2000) ........................................................... passed
+And input("//input[@id='login-password']",'Elif.123') ..................... passed
+And click("//p[@class='Type__TypeElement-goli3j-0 dmuHFl sc-hKwDye eKDPqH' and text()='Oturum Aç']") . passed
+And delay(4000) ........................................................... passed
+Given url 'https://api.spotify.com/v1' .................................... passed
+And path '/users/'+user_id+'/playlists' ................................... passed
+And header Authorization = token .......................................... passed
+And request playlist ...................................................... passed
+When method POST .......................................................... passed
+And def p_id = response.id ................................................ passed
+And path '/playlists/'+p_id+'/tracks' ..................................... passed
+And header Authorization = token .......................................... passed
+And header Content-Type = 'application/json' .............................. passed
+And request track ......................................................... passed
+When method POST .......................................................... passed
+And refresh() ............................................................. passed
+And delay(4000) ........................................................... passed
+And click("//div[@class='AINMAUImkAYJd4ertQxy']") ......................... passed
+And delay(3000) ........................................................... passed
+And click("//div[@class='ButtonInner-sc-14ud5tc-0 gHYQaG encore-bright-accent-set']") . passed
+And delay(2000) ........................................................... passed
+And url 'https://api.spotify.com/v1' ...................................... passed
+And path 'me/player/currently-playing' .................................... passed
+And header Authorization = token .......................................... passed
+And method get ............................................................ passed
+* def matchsong = karate.jsonPath(response,"$.['item'].['name']") ......... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: apiAndUi.feature:63 - evaluation (js) failed: karate.jsonPath(response,"$.['item'].['name']"), com.jayway.jsonpath.PathNotFoundException: Missing property in path $['item']
+stack trace: com.jayway.jsonpath.internal.path.PathToken.handleObjectProperty(PathToken.java:72)&#13;
+	at ✽.* def matchsong = karate.jsonPath(response,"$.['item'].['name']") (apiAndUi.feature:63)&#13;
+
+And match matchsong == 'The Final Countdown' .............................. skipped
+And print 'Song Matched' .................................................. skipped</failure>
+  </testcase>
+</testsuite>

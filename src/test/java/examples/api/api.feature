@@ -3,7 +3,7 @@ Feature: Api Test Senaryosu
   Background:
     * def urlHome = 'https://open.spotify.com/'
     * def user_id = '316s7gmalqadz6tzvbgbmv342grm'
-    * def token = 'Bearer BQCxWke9qgbcx7lhvhgSibR9WJwO7pHXl9DjO15G8VqcUABJF5_L7hrfCgPHi7lAvYSOhIEg1Qqh3pV6sKFlWIFWdad7V5U-a4Vt7srX8mrXx-Kv4G94gslyaTN3j1Ou9PodlfrYvVAerGnk1GJy-uLjZYfvdrRONVbC8XkYlymCKVEIJZgu5DUQNWGj9up8yK_W1YveXNpZsLK14y9Z9_ciW7nda55I3UcWYnrER8LFUrvG6yOL5bqsECVD00aphqcqZs0I5sGvE58'
+    * def token = 'Bearer BQB2WJ2pSR55lpxC5XAQ9EN0U_mfYPsqSldSWJBfilL4fKb-f7O0trMRJkeb3Zy0eg979RNd3GKdnNPjpMGp_hmovOjnEVzJEP6GLT_rnesI8RWIdKw6Q_Cztm_5Z0m7KGaPr0V3jwxg69GwCqyy4v-sTZNKo7XglWAxfSv380w7ix6Jhm-N_I3ovU_FcNvqrf_5GgCoo9eoElFBEJ2ZcQ_BxuwKDSyCXbwKG4Q043J-_tIhjFsX-axgqTWAAFYFc6aLvQLHaQSefQ'
     * def playlist =
     """
  {
@@ -48,7 +48,7 @@ Feature: Api Test Senaryosu
    Given url 'https://api.spotify.com/v1'
    And path '/search'
    And header Authorization = token
-   And param q = 'Bohemian Rhapsody'
+   And param q = 'Blinding Lights'
    And param type = 'track'
    When method GET
 
@@ -63,3 +63,4 @@ Feature: Api Test Senaryosu
     And header Content-Type = 'application/json'
     And request track
     When method POST
+

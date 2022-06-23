@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[1:26]","start":1655706579309,"end":1655706594144,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[1:26] 09:29:39.309-09:29:54.144 Login"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[2:40]","start":1655706594320,"end":1655706595012,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[2:40] 09:29:54.320-09:29:55.012 Get playlist user"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[3:49]","start":1655706595021,"end":1655706595611,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[3:49] 09:29:55.021-09:29:55.611 Create playlist"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[4:58]","start":1655706595612,"end":1655706596289,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[4:58] 09:29:55.612-09:29:56.289 Search song"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[5:68]","start":1655706596294,"end":1655706597146,"title":"src\/test\/java\/examples\/apiAndUi\/apiAndUi[5:68] 09:29:56.294-09:29:57.146 Add items to playlist"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
